@@ -7,7 +7,7 @@ import { Post } from '../post';
   providedIn: 'root',
 })
 export class PostService {
-  private apiUrl = 'http://localhost:3000/posts';
+  private apiUrl = 'https://json-server-d401a924f117.herokuapp.com/posts';
   constructor(private http: HttpClient) {}
 
   getPosts(): Observable<Post[]> {
