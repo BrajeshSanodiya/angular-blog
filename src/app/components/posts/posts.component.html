@@ -1,0 +1,4 @@
+@for (item of posts; track item.name) {
+    <app-post (onDeletePost)="onDelete(item)" [post]="item" class="col-12 {{colClass}}" > </app-post>
+  } 
+
